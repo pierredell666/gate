@@ -4,8 +4,8 @@ name: VPN Gate Node Check
 # 注意：GitHub 调度最小间隔约 5 分钟，但通常会延迟几分钟；仓库连续 60 天无提交会让定时任务自动停用。
 #
 on:
-   schedule:
-     - cron: '*/* * 1 * *'
+  schedule:
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       max_nodes:
